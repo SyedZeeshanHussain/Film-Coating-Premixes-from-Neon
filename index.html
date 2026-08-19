@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Premium Film Coating Premixes for pharmaceutical formulations - promoted by Neon Chemicals.">
+<title>Premium Film Coating Premixes | Neon Chemicals</title>
+<style>
+:root{
+  --blue:#073f8f;
+  --blue2:#0a5fc2;
+  --orange:#f58220;
+  --ink:#182536;
+  --muted:#607086;
+  --light:#f4f8fc;
+  --white:#fff;
+  --line:#dbe5ef;
+  --shadow:0 18px 45px rgba(10,55,105,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{height:60px;width:auto}
+.nav-links{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:700;color:#27476b}
+.nav-links a:hover{color:var(--orange)}
+.btn{display:inline-block;padding:13px 21px;border-radius:7px;font-weight:700;border:1px solid transparent;transition:.2s}
+.btn-primary{background:var(--blue);color:white}
+.btn-primary:hover{background:#052f6b;transform:translateY(-1px)}
+.btn-outline{border-color:var(--blue);color:var(--blue)}
+.btn-outline:hover{background:var(--light)}
+.hero{background:linear-gradient(135deg,#f8fbff 0%,#fff 60%,#eef6ff 100%);padding:78px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.eyebrow{color:var(--orange);font-size:14px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(38px,5vw,64px);line-height:1.05;margin:12px 0 22px;color:var(--blue)}
+.hero p{font-size:19px;color:var(--muted);max-width:650px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.hero-card{background:white;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:10px}
+.hero-card img{display:block;width:100%;border-radius:12px}
+.section{padding:82px 0}
+.section-alt{background:var(--light)}
+.section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-head h2{font-size:38px;line-height:1.15;color:var(--blue);margin:0 0 12px}
+.section-head p{color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feature{padding:27px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 25px rgba(0,50,100,.05)}
+.icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e9f3ff;color:var(--blue);font-size:23px;font-weight:800;margin-bottom:15px}
+.feature h3{margin:0 0 7px;color:var(--blue);font-size:19px}
+.feature p{margin:0;color:var(--muted);font-size:14px}
+.range{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.product{background:white;border:1px solid var(--line);border-radius:14px;padding:25px;display:flex;gap:17px;align-items:flex-start}
+.product-num{min-width:42px;height:42px;border-radius:10px;background:var(--blue);color:white;display:grid;place-items:center;font-weight:800}
+.product h3{margin:0 0 6px;color:var(--blue);font-size:18px}
+.product p{margin:0;color:var(--muted);font-size:14px}
+.color-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:start}
+.color-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:var(--shadow)}
+.color-card img{display:block;width:100%;height:auto;border-radius:10px}
+.color-note{text-align:center;margin-top:18px}
+.credentials{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.credential{padding:30px;background:white;border-radius:15px;border:1px solid var(--line);text-align:center}
+.credential strong{display:block;color:var(--blue);font-size:20px;margin-bottom:7px}
+.credential span{color:var(--muted);font-size:14px}
+.cta{background:linear-gradient(120deg,var(--blue),#0b65c7);color:white;border-radius:20px;padding:55px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.cta h2{margin:0 0 8px;font-size:34px}
+.cta p{margin:0;color:#dcecff}
+.cta .btn{background:white;color:var(--blue)}
+.footer{background:#092e63;color:#dce8f7;padding:32px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.footer img{height:55px;filter:brightness(0) invert(1)}
+.footer a{color:white;font-weight:700}
+.note{font-size:12px;color:#71839a;margin-top:14px}
+@media(max-width:900px){
+ .hero-grid{grid-template-columns:1fr}
+ .features{grid-template-columns:repeat(2,1fr)}
+ .credentials{grid-template-columns:1fr}
+ .cta{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:620px){
+ .nav-inner{height:auto;padding:12px 0}
+ .logo{height:48px}.nav-links{display:none}
+ .hero{padding:55px 0}.section{padding:58px 0}
+ .features,.range,.color-grid{grid-template-columns:1fr}
+ .section-head h2{font-size:30px}.cta{padding:32px}
+ .footer-inner{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#top" aria-label="Neon Chemicals home"><img class="logo" src="neon-logo.png" alt="Neon Chemicals"></a>
+    <div class="nav-links">
+      <a href="#benefits">Benefits</a>
+      <a href="#range">Product Range</a>
+      <a href="#color-card">Color Card</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-primary" href="#contact">Enquire Now</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Neon Chemicals | Pharmaceutical Excipients</div>
+      <h1>Premium Film Coating Premixes</h1>
+      <p>High-performance film coating premixes designed to enhance tablet appearance, provide protection, and support targeted drug-release requirements.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#range">Explore Product Range</a>
+        <a class="btn btn-outline" href="#contact">Request Information</a>
+      </div>
+      <p class="note">Solutions available across standard, enteric, controlled-release, softgel, titanium dioxide-free and food/nutraceutical coating applications.</p>
+    </div>
+    <div class="hero-card">
+      <img src="film-coating-flyer.png" alt="Film coating premixes promotional visual">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="benefits">
+  <div class="container">
+    <div class="section-head">
+      <h2>Coating Designed Around Your Formulation</h2>
+      <p>Premix solutions for practical pharmaceutical coating requirements, from appearance and protection to specialized release profiles.</p>
+    </div>
+    <div class="features">
+      <div class="feature"><div class="icon">✓</div><h3>Superior Protection</h3><p>Coating solutions designed to protect tablet cores and support product stability.</p></div>
+      <div class="feature"><div class="icon">✦</div><h3>Enhanced Appearance</h3><p>Smooth, consistent finishes with options for color and visual presentation.</p></div>
+      <div class="feature"><div class="icon">◉</div><h3>Targeted Release</h3><p>Enteric and controlled-release coating options for specialized formulation needs.</p></div>
+      <div class="feature"><div class="icon">✓</div><h3>Technical Support</h3><p>Technical guidance and documentation can support formulation and coating evaluation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="range">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Film Coating Premix Range</h2>
+      <p>A broad portfolio for pharmaceutical, softgel, food and nutraceutical applications.</p>
+    </div>
+    <div class="range">
+      <div class="product"><div class="product-num">01</div><div><h3>Standard Film Coating</h3><p>Clear or colored coatings designed to provide shine, ease of swallowing and taste masking.</p></div></div>
+      <div class="product"><div class="product-num">02</div><div><h3>Enteric / Delayed-Release Coating</h3><p>pH-triggered coating solutions designed to protect formulations from gastric conditions and release in the intestine.</p></div></div>
+      <div class="product"><div class="product-num">03</div><div><h3>Sustained / Controlled-Release Coating</h3><p>Membrane coating solutions designed to slow drug release over time for extended-release applications.</p></div></div>
+      <div class="product"><div class="product-num">04</div><div><h3>Titanium Dioxide (TiO₂)-Free Coating</h3><p>Alternative coating solutions without TiO₂ for formulations responding to changing regulatory requirements.</p></div></div>
+      <div class="product"><div class="product-num">05</div><div><h3>Soft Capsule (Softgel) Coating</h3><p>Anti-adhesion and controlled-release coating solutions developed specifically for softgel capsules.</p></div></div>
+      <div class="product"><div class="product-num">06</div><div><h3>Food / Nutraceutical Coating</h3><p>Color and moisture-barrier coating solutions for tablet candy, health supplements and nutraceutical products.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-alt" id="color-card">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Customization &amp; Appearance</div>
+      <h2>Extensive Color Card</h2>
+      <p>Explore a broad selection of coating colors for consistent tablet appearance, branding and product differentiation. Custom color matching can also be discussed for your formulation requirements.</p>
+    </div>
+    <div class="color-grid">
+      <div class="color-card">
+        <img src="color-card-1.png" alt="Film coating color card - page 1" loading="lazy">
+      </div>
+      <div class="color-card">
+        <img src="color-card-2.png" alt="Film coating color card - page 2" loading="lazy">
+      </div>
+    </div>
+    <p class="note color-note">Color shades shown are for reference. Final appearance may vary depending on formulation, substrate and application conditions.</p>
+  </div>
+</section>
+
+<section class="section" id="credentials">
+  <div class="container">
+    <div class="section-head">
+      <h2>Proven Credentials & Experience</h2>
+      <p>Key qualification and experience highlights for the core coating portfolio.</p>
+    </div>
+    <div class="credentials">
+      <div class="credential"><strong>US DMF Filings</strong><span>Core gastric-soluble and enteric-soluble film coating premixes have US DMF filings.</span></div>
+      <div class="credential"><strong>China CDE Registration</strong><span>Core gastric-soluble and enteric-soluble film coating premixes have China CDE registration from 2018.</span></div>
+      <div class="credential"><strong>20+ Years' Experience</strong><span>More than 20 years of involvement in the pharmaceutical excipients industry and supply to Chinese pharmaceutical manufacturers.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta" id="contact">
+      <div>
+        <h2>Looking for Film Coating Premixes?</h2>
+        <p>Contact Neon Chemicals to discuss your pharmaceutical coating requirements and product evaluation.</p>
+      </div>
+      <a class="btn" href="https://neonchemicals.com" target="_blank" rel="noopener">Visit Neon Chemicals</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <img src="neon-logo.png" alt="Neon Chemicals">
+    <div>
+      <div>Neon Chemicals — Indenters of Pharmaceutical Packaging &amp; Raw Material</div>
+      <div style="margin-top:7px"><a href="https://neonchemicals.com" target="_blank" rel="noopener">www.neonchemicals.com</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
